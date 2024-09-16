@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url("./assets/bg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* styles.css */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(17, 25, 40, 0.75); /* Custom grey background */
+  border-radius: 8px; /* Rounded corners */
+  backdrop-filter: blur(4px) saturate(150%); /* Backdrop blur and saturation */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(11, 14, 20, 0.75); /* Thumb color */
+  backdrop-filter: blur(4px) saturate(150%);
+  border-radius: 8px; /* Rounded corners */
+}
